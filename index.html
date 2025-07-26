@@ -1,15 +1,14 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rocket Soccer League</title>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
   <script src="https://unpkg.com/feather-icons"></script>
-  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
   <header class="navbar">
     <div class="brand">
       <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Font_Awesome_5_solid_rocket.svg" alt="logo" />
@@ -22,7 +21,6 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
     <div class="content">
       <h1>Build Your<br>Fantasy Soccer Team</h1>
@@ -31,11 +29,31 @@
     </div>
 
     <div class="mockup">
-      <img src="https://i.imgur.com/wzUN9Cl.png" alt="App Mockup" />
+      <div class="phone">
+        <h2>MY TEAM</h2>
+        <div class="players">
+          <div class="player"><img src="assets/jersey_haaland.png"><span>Haaland<br><strong>85</strong></span></div>
+          <div class="player"><img src="assets/jersey_messi.png"><span>Messi<br><strong>96</strong></span></div>
+          <div class="player"><img src="assets/jersey_salah.png"><span>Salah<br><strong>92</strong></span></div>
+          <div class="player"><img src="assets/jersey_debruyne.png"><span>De Bruyne<br><strong>89</strong></span></div>
+          <div class="player"><img src="assets/jersey_fernandes.png"><span>Fernandes<br><strong>87</strong></span></div>
+        </div>
+
+        <div class="xp-section">
+          <h3>XP SCORING</h3>
+          <label>Attack</label><div class="bar"><div class="fill" style="width: 90%"></div></div>
+          <label>Defense</label><div class="bar"><div class="fill" style="width: 75%"></div></div>
+          <label>Stamina</label><div class="bar"><div class="fill" style="width: 60%"></div></div>
+          <label>Popularity</label><div class="bar"><div class="fill" style="width: 95%"></div></div>
+        </div>
+
+        <div class="live-track">
+          <span>LIVE TRACK — 30 min</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Features -->
   <section class="features">
     <div class="feature">
       <i data-feather="dollar-sign"></i>
@@ -43,7 +61,7 @@
       <p>Bid on player cards using Bitcoin and other currencies</p>
     </div>
     <div class="feature">
-      <i data-feather="shopping-bag"></i>
+      <i data-feather="shopping-cart"></i>
       <h3>Microtransactions</h3>
       <p>Buy and sell merchandise and more</p>
     </div>
@@ -54,14 +72,13 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <div class="about">
-      <h2>About</h2>
+      <h3>About</h3>
       <p>Rocket Soccer League is a WordPress-based platform offering a dynamic fantasy soccer experience.</p>
     </div>
     <div class="wordpress">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/WordPress_logo.svg" alt="WordPress" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/WordPress_logo.svg" alt="WordPress">
       <p>WordPress</p>
     </div>
   </footer>
