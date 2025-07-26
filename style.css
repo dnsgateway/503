@@ -5,11 +5,11 @@
 }
 body {
   font-family: 'Outfit', sans-serif;
-  background: radial-gradient(ellipse at top left, #081122 10%, #0a162e 90%);
+  background: linear-gradient(135deg, #081122, #0a162e);
   color: white;
 }
 
-/* Header */
+/* NAV */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -19,7 +19,7 @@ body {
 .navbar .brand {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 10px;
 }
 .navbar .brand img {
   width: 30px;
@@ -27,109 +27,128 @@ body {
 .navbar .brand span {
   font-weight: bold;
   font-size: 1rem;
-  letter-spacing: 0.6px;
 }
-.navbar nav a {
+nav a {
   margin-left: 2rem;
-  text-decoration: none;
   color: white;
-  font-size: 1rem;
+  text-decoration: none;
 }
 
-/* Hero */
+/* HERO */
 .hero {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 3rem 2rem;
   flex-wrap: wrap;
 }
-.content {
-  max-width: 520px;
-}
 .content h1 {
-  font-size: 2.7rem;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 .content p {
   font-size: 1rem;
-  color: #b9c8d8;
-  margin-bottom: 2rem;
+  color: #b5c2d2;
+  margin-bottom: 1.5rem;
 }
 .cta {
-  display: inline-block;
   background: linear-gradient(to right, #00c6ff, #0072ff);
-  color: white;
   padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+  color: white;
   font-weight: bold;
-  border-radius: 8px;
   text-decoration: none;
+}
+.mockup .phone {
+  background: #111b2f;
+  border-radius: 28px;
+  padding: 1rem;
+  width: 320px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+}
+.mockup .players {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.mockup .player {
+  width: 90px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.mockup .player img {
+  width: 100%;
+  border-radius: 12px;
+  border: 2px solid #00c6ff;
+}
+.mockup h2 {
+  text-align: center;
   font-size: 1rem;
 }
-.mockup img {
-  width: 320px;
-  border-radius: 24px;
-  box-shadow: 0 0 24px rgba(0, 255, 255, 0.1);
+.xp-section {
+  margin-top: 1rem;
+}
+.xp-section h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.bar {
+  background: #2b3d5c;
+  height: 8px;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+.fill {
+  background: #00c6ff;
+  height: 100%;
+  border-radius: 5px;
+}
+.live-track {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #a0b6cc;
 }
 
-/* Features Section */
+/* FEATURES */
 .features {
   display: flex;
   justify-content: space-around;
-  text-align: center;
   padding: 3rem 2rem;
   background: #0f192c;
-  flex-wrap: wrap;
 }
 .feature {
-  flex: 1;
-  min-width: 220px;
-  margin: 1rem;
+  text-align: center;
+  max-width: 200px;
 }
 .feature i {
   color: #00c6ff;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .feature h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
 }
 .feature p {
-  color: #b0b8c4;
   font-size: 0.9rem;
-  line-height: 1.5;
+  color: #b5c2d2;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: #081122;
   padding: 2rem;
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
-footer .about {
-  flex: 1;
-  min-width: 260px;
+.about {
+  max-width: 400px;
 }
-footer .about h2 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-footer .about p {
-  font-size: 0.95rem;
-  color: #a6b0c0;
-}
-footer .wordpress {
+.wordpress {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 1rem;
 }
-footer .wordpress img {
+.wordpress img {
   width: 32px;
-}
-footer .wordpress p {
-  font-size: 1rem;
 }
