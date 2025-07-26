@@ -4,89 +4,88 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rocket Soccer League</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <div class="logo">🚀 <span>ROCKET</span> SOCCER LEAGUE</div>
-    <nav>
+  <header class="nav">
+    <img src="logo.png" alt="Rocket Soccer League Logo" class="logo"/>
+    <nav class="menu">
       <a href="#">Home</a>
       <a href="#">Merchandise</a>
       <a href="#">Support</a>
     </nav>
   </header>
 
-  <main class="main">
-    <section class="info">
-      <h1>Build Your <br />Fantasy <br />Soccer Team</h1>
+  <section class="hero">
+    <div class="text">
+      <h1>Build Your<br><span>Fantasy<br>Soccer Team</span></h1>
       <p>Manage top players and track their performance in real time with XP based on stats and events.</p>
-      <button class="download">Download App</button>
-      <div class="store-badges">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" />
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
+      <button class="cta">Download App</button>
+      <div class="stores">
+        <img src="appstore.png" alt="App Store"/>
+        <img src="playstore.png" alt="Google Play"/>
       </div>
       <div class="about">
         <h2>About</h2>
         <p>Rocket Soccer League is a WordPress-based platform offering a dynamic fantasy soccer experience.</p>
       </div>
-    </section>
+    </div>
 
-    <section class="mockup">
+    <div class="mockup">
       <div class="iphone">
         <div class="screen">
-          <div class="top-bar">LIVE <span>1:33</span></div>
+          <div class="live-header">LIVE</div>
           <div class="field">
-            <img src="images/tech-field.svg" alt="Futuristic Soccer Field" class="field-bg" />
-            <div class="logos">
-              <img src="images/logo-blue.svg" class="team-logo left" />
-              <img src="images/logo-red.svg" class="team-logo right" />
+            <img src="futuristic_field.png" class="field-bg"/>
+            <div class="team-logo home"><img src="team1.png"/></div>
+            <div class="team-logo away"><img src="team2.png"/></div>
+            <div class="dots">
+              <span class="dot" style="top:15%; left:20%;">1</span>
+              <span class="dot" style="top:30%; left:40%;">2</span>
+              <span class="dot" style="top:30%; left:60%;">3</span>
+              <span class="dot" style="top:45%; left:30%;">4</span>
+              <span class="dot" style="top:45%; left:70%;">5</span>
+              <span class="dot away" style="top:15%; right:20%;">1</span>
+              <span class="dot away" style="top:30%; right:40%;">2</span>
+              <span class="dot away" style="top:30%; right:60%;">3</span>
+              <span class="dot away" style="top:45%; right:30%;">4</span>
+              <span class="dot away" style="top:45%; right:70%;">5</span>
             </div>
-            <div class="players">
-              <div class="dot blue" style="top: 20%; left: 25%;">5</div>
-              <div class="dot blue" style="top: 30%; left: 15%;">2</div>
-              <div class="dot blue" style="top: 50%; left: 20%;">7</div>
-              <div class="dot blue" style="top: 70%; left: 25%;">8</div>
-              <div class="dot blue" style="top: 50%; left: 35%;">9</div>
-              <div class="dot red" style="top: 20%; right: 25%;">5</div>
-              <div class="dot red" style="top: 30%; right: 15%;">10</div>
-              <div class="dot red" style="top: 50%; right: 20%;">11</div>
-              <div class="dot red" style="top: 70%; right: 25%;">7</div>
-              <div class="dot red" style="top: 50%; right: 35%;">3</div>
-            </div>
+            <div class="match-time">1:33</div>
           </div>
-
-          <div class="matchup">
-            <div class="player-card blue">
-              <div class="jersey">9</div>
+          <div class="player-cards">
+            <div class="card blue">
+              <img src="jersey-blue.png" alt="Blue Jersey">
               <h3>Haaland</h3>
-              <p>Shots: 2 | Goals: 1</p>
+              <p class="rating">93</p>
+              <p class="stat">Shots: 2<br>Goals: 1</p>
             </div>
-            <span>VS</span>
-            <div class="player-card red">
-              <div class="jersey">11</div>
+            <div class="card red">
+              <img src="jersey-red.png" alt="Red Jersey">
               <h3>Mosai</h3>
-              <p>Shots: 1 | Goals: 1</p>
+              <p class="rating">92</p>
+              <p class="stat">Shots: 1<br>Goals: 1</p>
             </div>
           </div>
-
           <div class="boxscore">
             <table>
-              <thead><tr><th>Live</th><th>Stats</th><th>Goals</th></tr></thead>
+              <thead>
+                <tr><th>Live</th><th>Stats</th><th>Goals</th></tr>
+              </thead>
               <tbody>
-                <tr><td>Haaland</td><td>2</td><td>1</td></tr>
+                <tr><td>Haaland</td><td>9</td><td>1</td></tr>
                 <tr><td>Mosai</td><td>1</td><td>1</td></tr>
               </tbody>
             </table>
           </div>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2024 Rocket Soccer League</p>
-  </footer>
+      <div class="mini-cards">
+        <div class="matchup blue"><img src="jersey-blue.png"><span>Shots: 2<br>Goals: 1</span></div>
+        <div class="matchup red"><img src="jersey-red.png"><span>Shots: 1<br>Goals: 1</span></div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
