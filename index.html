@@ -27,14 +27,10 @@
         <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" />
         <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
       </div>
-      <div class="about">
-        <h2>About</h2>
-        <p>Rumble Sports is a WordPress-based platform offering a dynamic sports betting experience.</p>
-      </div>
     </section>
 
     <section class="mockup">
-      <div class="iphone">
+      <div class="iphone detailed">
         <div class="notch"></div>
         <div class="screen">
           <div class="top-bar">
@@ -97,46 +93,30 @@
           </div>
 
           <div class="bottom-nav">
-            <button>🏠</button>
-            <button>📊</button>
-            <button>💸</button>
-            <button>👤</button>
+            <button class="nav-btn active">🏠<span>Home</span></button>
+            <button class="nav-btn">📊<span>Stats</span></button>
+            <button class="nav-btn">💸<span>Bet</span></button>
+            <button class="nav-btn">👤<span>Profile</span></button>
           </div>
         </div>
       </div>
     </section>
   </main>
-
-  <footer class="structured-footer">
-    <div class="footer-col">
-      <h4>About</h4>
-      <p>Rumble Sports is a fast-growing fantasy betting app delivering live scores, stats and secure betting tools.</p>
-    </div>
-    <div class="footer-col">
-      <h4>How It Works</h4>
-      <ul>
-        <li>Draft Your Team</li>
-        <li>Place Bets</li>
-        <li>Track Live</li>
-        <li>Win Rewards</li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Follow Us</h4>
-      <ul>
-        <li>X (Twitter)</li>
-        <li>Instagram</li>
-        <li>YouTube</li>
-      </ul>
-    </div>
-    <p class="footer-copy">© 2024 Rumble Sports — Built on WordPress</p>
-  </footer>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".menu-toggle");
   const menu = document.querySelector(".menu-panel");
+  const navButtons = document.querySelectorAll(".nav-btn");
+
   toggle.addEventListener("click", () => {
     menu.classList.toggle("hidden");
+  });
+
+  navButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      navButtons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+    });
   });
 });
   </script>
