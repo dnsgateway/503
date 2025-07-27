@@ -205,7 +205,8 @@ nav a {
   color: #00ff94;
 }
 footer.structured-footer {
-  background: #01030e;
+/*   background: #01030e; */
+  background:#717378;
   padding: 2rem;
   display: flex;
   justify-content: space-around;
