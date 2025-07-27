@@ -66,7 +66,7 @@ nav a {
 .screen {
   height: 100%;
   border-radius: 30px;
-  background: #111733;
+  background: #000;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
