@@ -36,6 +36,14 @@ nav a {
 .info {
   flex: 1;
   max-width: 500px;
+  color: white;
+  text-shadow: 0 0 8px black;
+  z-index: 2;
+}
+
+.store-badges img {
+  width: 150px;
+  margin-right: 10px;
 }
 
 .mockup {
