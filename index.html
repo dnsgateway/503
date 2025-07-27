@@ -131,5 +131,14 @@
     </div>
     <p class="footer-copy">© 2024 Rumble Sports — Built on WordPress</p>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".menu-panel");
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+});
+  </script>
 </body>
 </html>
