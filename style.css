@@ -112,91 +112,86 @@ nav a {
   position: relative;
   width: 100%;
   height: 260px;
-  background: #071021;
-  border: 2px solid #00ffee30;
-  border-radius: 12px;
-  overflow: hidden;
+  background: linear-gradient(to bottom, #092032, #030b15);
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
+  overflow: hidden;
 }
 
 .field-bg {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(#0e172e, #030615);
-  opacity: 0.3;
+  background-image: url("soccer-field.png"); /* Replace with actual field image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.15;
   z-index: 1;
 }
 
-.logos {
-  position: absolute;
-  top: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 1rem;
-  z-index: 2;
-}
-
-.team-logo {
-  width: 36px;
-  height: 36px;
-}
-
-.matchup-cards {
+.matchup-container {
   position: relative;
-  width: 100%;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
-  padding: 0 2rem;
-  z-index: 3;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
 }
 
-.matchup-card {
-  background: #101933;
-  border: 1px solid #00ffee22;
-  border-radius: 12px;
-  padding: 1rem;
-  width: 120px;
+.player-card {
   text-align: center;
-  color: #fff;
-  box-shadow: 0 0 10px #00ffee33;
+  background: #101933;
+  border: 1px solid #ffffff22;
+  border-radius: 14px;
+  padding: 0.8rem;
+  width: 120px;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.1);
 }
 
-.matchup-card h4 {
-  margin: 0.5rem 0 0.2rem;
-  font-size: 1rem;
+.red-card {
+  border: 1px solid #ff3b3b55;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.2);
 }
 
-.player-info p {
-  margin: 0;
-  font-size: 0.85rem;
-  color: #ccc;
+.blue-card {
+  border: 1px solid #1f90ff55;
+  box-shadow: 0 0 12px rgba(0, 200, 255, 0.2);
 }
 
-.jersey {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 0.75rem;
-  border-radius: 8px;
-  color: #fff;
-  display: inline-block;
-  width: 48px;
+.player-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 0.5rem;
 }
 
-.red {
-  background: linear-gradient(135deg, #ff3b3b, #720000);
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+.player-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.2rem;
 }
 
-.blue {
-  background: linear-gradient(135deg, #1f90ff, #0d3c88);
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+.player-xp {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: cyan;
 }
 
+.vs-label {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0 1.2rem;
+}
 .boxscore table {
   width: 100%;
   border-collapse: collapse;
