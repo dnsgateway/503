@@ -110,60 +110,91 @@ nav a {
 
 .field {
   position: relative;
-  height: 180px;
-  margin-top: 0.5rem;
+  width: 100%;
+  height: 260px;
+  background: #071021;
+  border: 2px solid #00ffee30;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .field-bg {
-  background: rgba(255, 255, 255, 0.05);
-  height: 100%;
+  position: absolute;
   width: 100%;
+  height: 100%;
+  background: radial-gradient(#0e172e, #030615);
+  opacity: 0.3;
+  z-index: 1;
 }
 
 .logos {
+  position: absolute;
+  top: 10px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
+  z-index: 2;
 }
 
 .team-logo {
-  width: 40px;
+  width: 36px;
+  height: 36px;
 }
 
-.players .dot {
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: #1f90ff;
+.matchup-cards {
+  position: relative;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-}
-.players .red {
-  background: #ff3b3b;
+  justify-content: space-between;
+  padding: 0 2rem;
+  z-index: 3;
 }
 
-.matchup {
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem 0;
-  align-items: center;
-}
-
-.player-card {
+.matchup-card {
+  background: #101933;
+  border: 1px solid #00ffee22;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 120px;
   text-align: center;
+  color: #fff;
+  box-shadow: 0 0 10px #00ffee33;
 }
+
+.matchup-card h4 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1rem;
+}
+
+.player-info p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
 .jersey {
   font-size: 1.5rem;
-  background: #0e1f4d;
-  padding: 0.4rem 0.8rem;
-  border-radius: 12px;
+  font-weight: bold;
+  padding: 0.75rem;
+  border-radius: 8px;
+  color: #fff;
+  display: inline-block;
+  width: 48px;
   margin-bottom: 0.5rem;
 }
-.red .jersey {
-  background: #4d0e0e;
+
+.red {
+  background: linear-gradient(135deg, #ff3b3b, #720000);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+
+.blue {
+  background: linear-gradient(135deg, #1f90ff, #0d3c88);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
 .boxscore table {
