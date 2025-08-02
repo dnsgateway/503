@@ -177,6 +177,10 @@ nav a {
   cursor: pointer;
   display: block;
 }
+.view-full-btn a{
+  color: white;
+  text-docration: none; 
+}
 .bottom-nav {
   display: flex;
   justify-content: space-around;
